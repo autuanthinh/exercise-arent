@@ -1,0 +1,17 @@
+@import '~styles/common/export';
+
+.date-achievement-rate {
+  height: 316px;
+  background-image: url('~/public/images/d01.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .process-circle-wrapper {
+    .process-circle-label {
+      color: $colorLight;
+    }
+  }
+}

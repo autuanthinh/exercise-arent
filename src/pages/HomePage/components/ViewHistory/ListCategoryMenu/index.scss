@@ -1,0 +1,28 @@
+@import '~styles/common/export';
+
+.list-category-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  .category-menu-button {
+    margin: 15px;
+    flex: 0 0 134px;
+    cursor: pointer;
+    transition: all linear 0.3s;
+    filter: grayscale(1);
+
+    &:hover {
+      transform: translateY(-10px);
+    }
+
+    &.active {
+      filter: grayscale(0);
+    }
+
+    @include media-breakpoint-up(md) {
+      margin: 25px 42px;
+    }
+  }
+}

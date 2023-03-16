@@ -1,0 +1,26 @@
+@import '~styles/common/export';
+
+.recommended-card {
+  background-color: $colorDark600;
+  padding: 24px 8px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+
+  &__title {
+    font-size: 1.375rem;
+    color: $colorPrimary300;
+    text-align: center;
+  }
+  &__line {
+    height: 1px;
+    width: 56px;
+    background-color: white;
+    margin: 10px 0;
+  }
+  &__message {
+    font-size: 1.125rem;
+    color: white;
+  }
+}

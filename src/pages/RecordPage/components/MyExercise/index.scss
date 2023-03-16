@@ -1,0 +1,64 @@
+@import '~styles/common/export';
+
+.my-exercise {
+  background-color: $colorDark500;
+  padding: 16px 32px;
+
+  .title {
+    color: white;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    font-family: 'Inter';
+    font-weight: 400;
+
+    &__label {
+      font-size: 1rem;
+    }
+    &__date {
+      font-size: 1.25rem;
+      margin-left: 36px;
+    }
+  }
+
+  .exercise-record-list {
+    height: 200px;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  .exercise-record {
+    position: relative;
+    display: flex;
+    border-bottom: 1px solid $colorGray;
+    padding: 8px 20px 2px 16px;
+
+    &::before {
+      content: ' ';
+      background-color: white;
+      position: absolute;
+      border-radius: 50%;
+      top: 18px;
+      left: 0;
+      width: 7px;
+      height: 7px;
+    }
+
+    .record-info {
+      flex: 1 1 auto;
+      font-size: 1rem;
+
+      &__title {
+        color: white;
+      }
+      &__kcal {
+        color: $colorPrimary300;
+      }
+    }
+    .record-duration {
+      width: 100px;
+      color: $colorPrimary300;
+      font-size: 1.125rem;
+      text-align: right;
+    }
+  }
+}

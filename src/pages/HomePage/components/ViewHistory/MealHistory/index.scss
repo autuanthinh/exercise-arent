@@ -1,0 +1,8 @@
+@import '~styles/common/export';
+
+.meal-history {
+  .meal-card:hover {
+    transform: scale(1.05);
+    transition: all linear 0.3s;
+  }
+}

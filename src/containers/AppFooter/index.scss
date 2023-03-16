@@ -1,0 +1,22 @@
+@import '~styles/common/export';
+
+.app-footer {
+  background-color: $colorDark500 !important;
+  margin-top: 64px;
+
+  .links {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 48px 0;
+
+    .nav-link {
+      color: $colorLight;
+      font-size: 0.6875rem;
+      display: inline-block;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

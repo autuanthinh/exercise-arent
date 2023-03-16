@@ -1,0 +1,12 @@
+@import '~styles/common/export';
+
+.body-percentage-graph {
+  background-color: $colorDark600;
+  height: 316px;
+  padding-top: 12px;
+  padding-bottom: 18px;
+
+  .line-wrapper {
+    height: 100%;
+  }
+}

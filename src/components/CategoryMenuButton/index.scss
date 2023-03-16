@@ -1,0 +1,26 @@
+@import '~styles/common/export';
+
+.category-menu-button {
+  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  background: linear-gradient(155.89deg, #ffcc21 8.26%, #ff963c 91.18%);
+
+  width: 134px;
+  height: 116px;
+  display: inline-flex !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &--icon {
+    svg {
+      width: 56px;
+      height: 56px;
+    }
+  }
+  &--label {
+    font-family: Inter;
+    font-size: 20px;
+    color: $colorLight;
+  }
+}

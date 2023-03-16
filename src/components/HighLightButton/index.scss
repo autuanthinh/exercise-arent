@@ -1,0 +1,12 @@
+@import '~styles/common/export';
+
+.high-light-button {
+  background: linear-gradient(32.95deg, #ffcc21 8.75%, #ff963c 86.64%);
+  min-width: 300px;
+  padding: 1rem;
+  border: unset;
+  border-radius: 5px;
+  display: inline-block;
+  font-size: 1.125rem;
+  color: $colorLight !important;
+}
