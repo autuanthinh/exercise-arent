@@ -1,3 +1,6 @@
+import { useContext } from 'react';
+import { AppContext } from 'context';
+
 import { NavLink } from 'react-router-dom';
 import { Container, Navbar, Nav, Dropdown } from 'react-bootstrap';
 import NotificationBadge, { Effect } from 'react-notification-badge';
@@ -12,6 +15,8 @@ import IconClose from 'assets/icons/close.png';
 import './index.scss';
 
 const Header = () => {
+  const { setLoggedIn } = useContext(AppContext);
+
   return (
     <Navbar bg="dark" variant="dark" className="app-header">
       <Container>
@@ -84,6 +89,8 @@ const Header = () => {
             </Dropdown.Item>
             <Dropdown.Divider />
             <Dropdown.Item href="#">選択中のコース</Dropdown.Item>
+            <Dropdown.Divider />
+            <Dropdown.Item onClick={() => setLoggedIn?.(false)}>Logout</Dropdown.Item>
           </Dropdown.Menu>
         </Dropdown>
       </Container>

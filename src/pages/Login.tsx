@@ -1,15 +1,16 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { AppContext } from 'context';
+
+import { Button } from 'react-bootstrap';
 
 function Login() {
+  const { setLoggedIn } = useContext(AppContext);
+
   return (
-    <>
+    <div style={{ textAlign: 'center' }}>
       <h1>Login</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam aliquet, purus vitae eleifend tristique, lorem
-        magna volutpat orci, et vehicula erat erat nec elit. Aenean posuere nunc ac cursus facilisis. Aenean vel porta
-        turpis, ut iaculis justo.
-      </p>
-    </>
+      <Button onClick={() => setLoggedIn?.(true)}>Click here to login</Button>
+    </div>
   );
 }
 

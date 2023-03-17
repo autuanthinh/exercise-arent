@@ -3064,6 +3064,13 @@
   dependencies:
     "@types/react" "*"
 
+"@types/react-scrollbar@^0.5.3":
+  version "0.5.3"
+  resolved "https://registry.yarnpkg.com/@types/react-scrollbar/-/react-scrollbar-0.5.3.tgz#c88592632d556e1eb4c4c1bac6418eeb35a35278"
+  integrity sha512-Kv8+xEbYsfhNMm0l+sx/LXdLTf9JNS5a3gpBe3qttBFTvLoWcG5zSGzMwGpAHow/9TZhiVSGE2joGSVeh+3Clg==
+  dependencies:
+    "@types/react" "*"
+
 "@types/react-transition-group@^4.4.4", "@types/react-transition-group@^4.4.5":
   version "4.4.5"
   resolved "https://registry.yarnpkg.com/@types/react-transition-group/-/react-transition-group-4.4.5.tgz#aae20dcf773c5aa275d5b9f7cdbca638abc5e416"

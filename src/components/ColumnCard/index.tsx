@@ -15,7 +15,7 @@ const ColumnCard: FC<ColumnCardExtendProps> = ({ imageUrl, label, title, tags })
       <div className="column-card__title">{title}</div>
       <div className="column-card__tags">
         {tags.map(t => (
-          <a href="#">#{t}</a>
+          <span>#{t}</span>
         ))}
       </div>
     </div>

@@ -1,5 +1,6 @@
 import { FC, useMemo } from 'react';
 import { Col, Row } from 'react-bootstrap';
+import ScrollArea from 'components/ScrollArea';
 
 import './index.scss';
 
@@ -30,7 +31,7 @@ const ExerciseRecord: FC<{
 
 const ExerciseRecordList: FC<{ data: ExerciseRecordType[] }> = ({ data }) => {
   return (
-    <div className="exercise-record-list">
+    <ScrollArea className="exercise-record-list">
       <div>
         <Row>
           {data.map((r, i) => {
@@ -42,7 +43,7 @@ const ExerciseRecordList: FC<{ data: ExerciseRecordType[] }> = ({ data }) => {
           })}
         </Row>
       </div>
-    </div>
+    </ScrollArea>
   );
 };
 

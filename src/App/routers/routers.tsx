@@ -1,10 +1,10 @@
-import { createRef } from 'react';
+import { createRef, lazy } from 'react';
 
-import HomePage from 'pages/HomePage';
-import RecordPage from 'pages/RecordPage';
-import ColumnPage from 'pages/ColumnPage';
+const LoginPage = lazy(() => import('pages/Login'));
 
-import Login from 'pages/Login';
+const HomePage = lazy(() => import('pages/HomePage'));
+const RecordPage = lazy(() => import('pages/RecordPage'));
+const ColumnPage = lazy(() => import('pages/ColumnPage'));
 
 type RefElement = undefined | HTMLDivElement;
 
@@ -20,7 +20,7 @@ export function createRoutes(isAuth: boolean) {
           nodeRef: createRef<RefElement>(),
         },
       ]
-    : [{ path: '/', name: 'Login', element: <Login />, nodeRef: createRef<RefElement>() }];
+    : [{ path: '/', name: 'Login', element: <LoginPage />, nodeRef: createRef<RefElement>() }];
 }
 
 export type RoutesType = ReturnType<typeof createRoutes>;

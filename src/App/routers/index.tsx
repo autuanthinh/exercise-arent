@@ -1,4 +1,4 @@
-import React, { FC, PropsWithChildren, useMemo } from 'react';
+import { FC, PropsWithChildren, Suspense, useMemo } from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 import { AppRoutesContext } from 'context';
@@ -34,7 +34,9 @@ const Router: FC<RouterProps> = ({ isLoggedIn }) => {
 
   return (
     <AppRoutesContext.Provider value={routes}>
-      <RouterProvider router={router} />
+      <Suspense fallback={<>loading...</>}>
+        <RouterProvider router={router} />
+      </Suspense>
     </AppRoutesContext.Provider>
   );
 };

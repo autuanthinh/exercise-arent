@@ -1,0 +1,38 @@
+@import '~styles/common/export';
+
+$scrollBarSize: 6px;
+$scrollBarRadius: 3px;
+
+.scrollarea {
+  .scrollbar-container {
+    border-radius: $scrollBarRadius;
+    z-index: 0;
+
+    .scrollbar {
+      background-color: $colorPrimary300 !important;
+      border-radius: $scrollBarRadius;
+    }
+
+    &.vertical {
+      width: $scrollBarSize;
+      .scrollbar {
+        width: $scrollBarSize;
+        margin: 0;
+      }
+      &.horizontal {
+        height: $scrollBarSize;
+        .scrollbar {
+          height: $scrollBarSize;
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  &:hover {
+    .scrollbar-container {
+      background: $colorGray;
+      opacity: 0.6 !important;
+    }
+  }
+}
