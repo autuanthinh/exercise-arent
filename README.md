@@ -8,10 +8,21 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - Responsive website ~95%
 - Seperate Auth and Un-Auth
 - Usintg typescript to implement
-- Using craro to override webpack config
+- Using craro to reconfig webpack
 - Un-use state management library
 - Code splitting each page to chunks
 - Able to interact with UI
+
+## App environment
+- Node v18.14.2
+- Yarn ^v1.22.0
+- React ^18.2.0
+
+| Operation/ Build Environment   | Version |
+| --- | --- |
+| Node | v18.14.2 |
+| Yarn | ^v1.22.0 |
+| React | ^18.2.0 |
 
 ## Available Scripts
 
