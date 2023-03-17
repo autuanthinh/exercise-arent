@@ -14,14 +14,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - Able to interact with UI
 
 ## App environment
-- Node v18.14.2
-- Yarn ^v1.22.0
-- React ^18.2.0
 
 | Operation/ Build Environment   | Version |
 | --- | --- |
-| Node | v18.14.2 |
-| Yarn | ^v1.22.0 |
+| Node | 18.14.2 |
+| Yarn | ^1.22.0 |
 | React | ^18.2.0 |
 
 ## Available Scripts
