@@ -34,9 +34,7 @@ const Router: FC<RouterProps> = ({ isLoggedIn }) => {
 
   return (
     <AppRoutesContext.Provider value={routes}>
-      <Suspense fallback={<>loading...</>}>
-        <RouterProvider router={router} />
-      </Suspense>
+      <RouterProvider router={router} />
     </AppRoutesContext.Provider>
   );
 };

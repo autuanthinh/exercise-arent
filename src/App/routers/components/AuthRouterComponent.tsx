@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import { FC, Suspense } from 'react';
 import { useLocation, useOutlet } from 'react-router-dom';
 import { CSSTransition, SwitchTransition } from 'react-transition-group';
 import AppHeader from 'containers/AppHeader';
@@ -21,7 +21,7 @@ const AuthRouterComponent: FC<{
         <CSSTransition key={location.pathname} nodeRef={nodeRef} timeout={300} classNames="page" unmountOnExit>
           {() => (
             <div ref={nodeRef as any} className="page page--auth">
-              {currentOutlet}
+              <Suspense fallback={<>loading...</>}>{currentOutlet}</Suspense>
             </div>
           )}
         </CSSTransition>

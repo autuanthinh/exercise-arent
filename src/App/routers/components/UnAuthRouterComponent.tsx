@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import { FC, Suspense } from 'react';
 import { useLocation, useOutlet } from 'react-router-dom';
 import { CSSTransition, SwitchTransition } from 'react-transition-group';
 
@@ -17,7 +17,7 @@ const UnAuthRouterComponent: FC<{
         <CSSTransition key={location.pathname} nodeRef={nodeRef} timeout={300} classNames="page" unmountOnExit>
           {() => (
             <div ref={nodeRef as any} className="page">
-              {currentOutlet}
+              <Suspense fallback={<>loading...</>}>{currentOutlet}</Suspense>
             </div>
           )}
         </CSSTransition>
