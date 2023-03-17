@@ -1,4 +1,4 @@
-import { FC, PropsWithChildren, Suspense, useMemo } from 'react';
+import { FC, PropsWithChildren, useMemo } from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 import { AppRoutesContext } from 'context';
